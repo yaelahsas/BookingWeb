@@ -217,6 +217,7 @@ public function prosesbooking(Request $request){
         $book->periode_booking = $request->input('periode_booking');
         $book->id_user = $request->input('id_user');
         $book->id_paket = $request->input('id_paket');
+        $book->kode_booking = $Order_id;
         $book->id_lembaga = $request->input('id_lembaga');
         $book->status_booking = $request->input('status_booking','pending');//status pembayaran jika belum melakukan transaksi maka akan terisi otomatis pending    
         $book->payment_token = $snap->token;

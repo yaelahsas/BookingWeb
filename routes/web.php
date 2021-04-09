@@ -84,3 +84,6 @@ Route::get('logout-admin', 'AuthController@logout')->name('logout-admin')->middl
 Route::get('logout-superadmin', 'AuthController@logout')->name('logout-superadmin')->middleware(['superadmin', 'auth']);// hanya admin
 
 
+//sukses bayar
+Route::get('sukses','TransaksiController@sukses');
+
